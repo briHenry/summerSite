@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Summer</title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <!--contains title and website links-->
+        <div id="header">
+         <table> 
+             <tr>
+                 <td id="headerTitle">My Summer</td>
+                 <td id="headShortcuts">Home</td>
+                 <td id="headShortcuts">Locations</td>
+                 <td id="headShortcuts">Pictures</td>
+             </tr>
+         </table> 
+        </div>
+
+        <!--home section-->
+        <div id="home">
+            <!-- <img src="bookstorePic.jpg"> -->
+        </div>
+
+        <!--places ive gone section-->
+        <div id="location"
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiYmhlbnJ5NTgxMTEiLCJhIjoiY2prbXExNjBhMG92cDNxcXJ5NWxsc3dhZiJ9.iq7F3T99opYcSAFb21MDTg';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v10'
+                });
+            </script>
+        </div>
+        
+         <!--pictures section-->
+        <div id="pictures">
+            <img src="buildingPic.jpg">
+            <img src="everyonePic.jpg">
+            <img src="fireworksPic.jpg">
+            <img src="glossierPic.jpg">
+            <img src="grandCentralPic.jpg">
+            <img src="highline2Pic.jpg">
+            <img src="highlinePic.jpg">
+            <img src="libraryPic.jpg">
+            <img src="meAndAlexaPic.jpg">
+            <img src="poolPic.jpg">
+        </div>
+    </body>
+</html>
